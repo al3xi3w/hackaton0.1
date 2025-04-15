@@ -1,35 +1,41 @@
-def suma(a, b):
-    return a + b
+from operaciones import sumar, restar, multiplicar, dividir
 
-def calculadora():
-    print("Calculadora simple")
-    print("Seleccione la operación:")
-    print("1. Sumar")
-    print("2. Restar")
-    print("3. Multiplicar")
-    print("4. Dividir")
+def main():
+    while True:
+        operacion = input("Escribe una operación (ej. 2 + 2) o 'c' para limpiar: ")
 
-    operacion = input("Ingrese el número de la operación (1/2/3/4): ")
+        if operacion.lower() == 'c':
+            print("Operación borrada.")
+            continue
 
-    num1 = float(input("Ingrese el primer número: "))
-    num2 = float(input("Ingrese el segundo número: "))
+        try:
+            partes = operacion.strip().split()
+            if len(partes) != 3:
+                print("Formato inválido. Usa: número operador número (ej. 5 + 3)")
+                continue
 
-    if operacion == "1":
-        resultado = suma(num1, num2)
-        print(f"El resultado de la suma es: {resultado}")
-    elif operacion == "2":
-        resultado = num1 - num2
-        print(f"El resultado de la resta es: {resultado}")
-    elif operacion == "3":
-        resultado = num1 * num2
-        print(f"El resultado de la multiplicación es: {resultado}")
-    elif operacion == "4":
-        if num2 != 0:
-            resultado = num1 / num2
-            print(f"El resultado de la división es: {resultado}")
-        else:
-            print("¡Error! No se puede dividir entre cero.")
-    else:
-        print("Operación no válida")
+            num1 = float(partes[0])
+            operador = partes[1]
+            num2 = float(partes[2])
 
-calculadora()
+            if operador == '+':
+                resultado = sumar(num1, num2)
+            elif operador == '-':
+                resultado = restar(num1, num2)
+            elif operador == '*':
+                resultado = multiplicar(num1, num2)
+            elif operador == '/':
+                resultado = dividir(num1, num2)
+            else:
+                print("Operador no reconocido.")
+                continue
+
+            print(f"Resultado: {resultado}\n")
+
+        except ValueError:
+            print("Error: asegúrate de escribir números válidos.")
+        except ZeroDivisionError:
+            print("Error: división por cero.")
+
+if __name__ == "__main__":
+    main()
