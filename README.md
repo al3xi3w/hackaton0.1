@@ -2,7 +2,7 @@
 
 ## Consideraciones Generales 📋
 
-Bienvenidos a la primera hackathon del semestre 2024-2 del curso CS2031, Desarrollo Basado en Plataformas. En esta edición, nos centraremos exclusivamente en Git y GitHub, herramientas fundamentales para cualquier desarrollador. En lugar de enfocarnos en la escritura de código, nos dedicaremos a perfeccionar nuestras habilidades en el manejo de repositorios, la colaboración en equipos y la integración continua.
+Bienvenidos a la primera hackathon del semestre **2025-1** del curso CS2031, Desarrollo Basado en Plataformas. En esta edición, nos centraremos exclusivamente en Git y GitHub, herramientas fundamentales para cualquier desarrollador. En lugar de enfocarnos en la escritura de código, nos dedicaremos a perfeccionar nuestras habilidades en el manejo de repositorios, la colaboración en equipos y la integración continua.
 
 Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Será crucial que trabajen en conjunto para cumplir con todos los checkpoints establecidos. Es importante que mantengan una comunicación constante y que asignen tareas de manera equitativa. Al ser una actividad grupal, la organización y la cooperación serán clave para el éxito.
 
@@ -32,7 +32,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
     1. Crear un repositorio público o privado en GitHub. Este repositorio será compartido por todos los miembros del equipo.
     2. Crear un archivo `README.md` en el directorio `docs/` (vacío por ahora).
     3. Configurar las reglas de la rama principal (`main` o `master`) para que no se pueda hacer `push` directo a esta rama. Los cambios en la rama principal solo deben realizarse mediante pull requests aprobados.
-    4. Crear un archivo `.gitignore` en el repositorio y añadir los directorios y archivos que no deben ser versionados, por ejemplo, `__pycache__/`, `*.pyc`, `.env`, `venv/`, etc.
+    4. Crear un archivo `.gitignore` en el repositorio y añadir los directorios y archivos que no deben ser versionados, por ejemplo, `__pycache__/`, `*.pyc`, `.env`, `venv/`, `.venv/`, etc.
   - **Evaluación**: Proveer un enlace al repositorio y capturas de pantalla de la configuración de las reglas de la rama principal.
 
 ### **Checkpoint 3: Gestión de Issues y Pull Requests** 🔄
@@ -87,8 +87,7 @@ Para esta hackathon, cada equipo estará compuesto por cuatro (4) miembros. Ser�
 
 ## Consideraciones Finales
 
-- **Comunicación**: Mantengan una comunicación constante a través de plataformas como Slack, Discord o el foro del curso para resolver dudas y coordinarse de manera eficiente.
 - **Documentación**: Asegúrense de documentar cada paso realizado en el repositorio, utilizando los mensajes de commit y el archivo `docs/README.md`.
-- **Fecha Límite**: La hackathon deberá completarse antes del 31 de agosto a las 5:20 de la tarde, momento en el cual los repositorios serán revisados.
+- **Fecha Límite**: La hackathon deberá completarse antes del 15 de abril a las 18 horas, momento en el cual los repositorios serán revisados.
 
 ¡Buena suerte a todos! ⚡ Que esta hackathon sea una oportunidad para fortalecer su dominio de Git y GitHub.
