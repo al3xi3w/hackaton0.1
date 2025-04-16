@@ -1,6 +1,14 @@
 def calculate(expression):
+    expression = expression.strip()
+    if not expression:
+        raise ValueError("La expresión está vacía")
+
     try:
-        a, b = expression.split('+')
-        return float(a.strip()) + float(b.strip())
+        result = eval(expression)
+        return result
+    except ZeroDivisionError:
+        raise
+    except SyntaxError:
+        raise
     except Exception:
-        raise ValueError("Expresion invalida")
+        raise ValueError("Expresión inválida")
